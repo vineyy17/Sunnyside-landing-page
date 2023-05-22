@@ -142,6 +142,51 @@ body {
   width: 100%;
 }
 
+.stories {
+  grid-column: full-start/full-end;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+  padding: 15vh 7.2vw;
+  grid-row-gap: 8vh;
+  grid-column-gap: 2vw;
+  justify-items: center;
+}
+
+.story-heading {
+  grid-column: 1/-1;
+  letter-spacing: 1.2rem;
+  color: hsl(210, 4%, 67%);
+}
+
+.story {
+  display: grid;
+  justify-items: center;
+}
+.story__img {
+  width: 5rem;
+  border-radius: 50%;
+  display: block;
+}
+.story__text {
+  text-align: center;
+  color: hsl(213, 9%, 39%);
+}
+.story__name {
+  text-align: center;
+  margin-top: 5vh;
+  font-family: "Fraunces", sans-serif;
+  font-size: 1.8rem;
+  color: hsl(212, 27%, 19%);
+}
+.story__role {
+  text-align: center;
+  font-size: 1.3rem;
+  color: hsl(210, 4%, 67%);
+}
+.story__details {
+  margin-top: 5vh;
+}
+
 .btn, .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;

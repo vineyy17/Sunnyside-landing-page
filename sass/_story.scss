@@ -1,0 +1,55 @@
+.stories {
+    grid-column: full-start / full-end;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+
+    padding: 15vh 7.2vw;
+    grid-row-gap: 8vh;
+    grid-column-gap: 2vw;
+
+    justify-items: center;
+
+
+
+}
+
+.story-heading {
+    grid-column: 1 / -1;
+    letter-spacing: 1.2rem;
+    color: $grayish-blue;
+}
+
+.story {
+    display: grid;
+    justify-items: center;
+
+    &__img {
+        width: 5rem;
+        border-radius: 50%;
+        display: block;  
+    }
+
+    &__text {
+        text-align: center;
+        color: $very-dark-grayish-blue;
+    }
+
+    &__name {
+        text-align: center;
+        margin-top: 5vh;
+        font-family: $font-secondary;
+        font-size: 1.8rem;
+        color: $very-dark-desaturated-blue;
+    }
+
+    &__role {
+        text-align: center;
+        font-size: 1.3rem;
+        color: $grayish-blue;
+    }
+
+    &__details {
+        margin-top: 5vh;
+    }
+}
