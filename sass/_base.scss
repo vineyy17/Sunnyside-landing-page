@@ -32,7 +32,7 @@ html {
 
 body {
     font-family: $font-primary;
-    color: $white;
+    color: #000;
     font-weight: 600;
     line-height: 1.6;
     font-size: 1.8rem;
@@ -42,6 +42,6 @@ body {
 .container {
     padding: 0;
     display: grid;
-    grid-template-rows: 100vh repeat(6, min-content);
+    grid-template-rows: 100vh repeat(5, min-content);
     grid-template-columns: [full-start] repeat(2, [col-start] minmax(min-content, 1fr) [col-end]) [full-start];
 }
