@@ -15,9 +15,13 @@
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
-        font-family: $font-secondary;
-        text-transform: uppercase;
-        letter-spacing: .5rem;
+    }
+
+    &__arrow-box {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
 }

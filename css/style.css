@@ -26,6 +26,14 @@ body {
   grid-template-columns: [full-start] repeat(2, [col-start] minmax(min-content, 1fr) [col-end]) [full-start];
 }
 
+.heading-1 {
+  font-family: "Fraunces", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+  font-weight: 900;
+  font-size: 4rem;
+}
+
 .navbar {
   display: grid;
 }
@@ -68,9 +76,12 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  font-family: "Fraunces", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.5rem;
+}
+.header__arrow-box {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .btn, .btn:link, .btn:visited {
@@ -83,6 +94,7 @@ body {
   background-color: hsl(0, 0%, 100%);
   color: hsl(212, 27%, 19%);
   font-family: "Fraunces", sans-serif;
+  font-weight: 700;
   border: none;
   cursor: pointer;
 }
