@@ -1,0 +1,37 @@
+.navbar {
+    display: grid;
+
+
+    &__logo {
+        grid-row: 1 / 2;
+        grid-column: 1 / -1;
+
+        align-self: end;
+    }
+
+    &__menu {
+        grid-row: 1 / 2;
+        grid-column: 1 / -1;
+
+        justify-self: end;
+
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(4, min-content);
+
+        grid-column-gap: 4rem;
+        align-items: center;
+
+    }
+
+    &__item {
+        display: inline-block;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $white;
+    }
+}

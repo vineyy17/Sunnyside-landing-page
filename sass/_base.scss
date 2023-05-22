@@ -37,5 +37,11 @@ body {
     line-height: 1.6;
     font-size: 1.8rem;
 
-    background-color: $soft-red;
+}
+
+.container {
+    padding: 0;
+    display: grid;
+    grid-template-rows: 100vh repeat(6, min-content);
+    grid-template-columns: [full-start] repeat(2, [col-start] minmax(min-content, 1fr) [col-end]) [full-start];
 }
