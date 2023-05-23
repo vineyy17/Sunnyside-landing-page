@@ -38,3 +38,11 @@
         width: 100%;
     }
 }
+
+.learn-div {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    z-index: 1000;
+}

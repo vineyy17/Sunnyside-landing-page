@@ -16,5 +16,53 @@
 
         border: none;
         cursor: pointer;
+        transition: .3s ease-in-out;
+    }
+
+    &:hover {
+        background-color: rgb(106, 204, 250);
+        color: white;
     }
 }
+
+.learn-btn {
+    background-color: transparent;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    height: 2rem;
+    font-family: $font-secondary;
+    color: $very-dark-desaturated-blue;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 900;
+    z-index: 1;
+    width: 14rem;
+    height: 2rem;
+
+}
+
+.learn-btn::after {
+  content: "";
+  width: 105%;
+  position: absolute;
+  bottom: 0px;
+  height: 8px;
+  left: -5.5%;
+  border-radius: 10px;
+  opacity: 0.3;
+  transition: all 0.4s ease-in-out; 
+}
+
+.learn-btn--yellow::after {
+    background-color: hsl(51, 100%, 49%);
+}
+
+.learn-btn--pink::after {
+    background-color: hsl(7, 99%, 70%);
+}
+
+.learn-btn:hover::after {
+    opacity: 1;
+}
+

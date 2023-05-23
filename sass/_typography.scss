@@ -33,4 +33,23 @@
     font-family: $font-secondary;
     color: $very-dark-desaturated-blue;
     text-transform: uppercase;
+
+    // &--learn::after {
+    //     content: "";
+    //     width: 100%;
+    //     position: absolute;
+    //     left: -5%;
+    //     bottom: 10%;
+    //     height: .8rem;
+    //     border-radius: 10px;
+    //     opacity: .3;
+    // }
+
+    // &--yellow::after{
+    //     background-color: hsl(51, 100%, 49%);
+    // }
+
+    // &--pink::after{
+    //     background-color: hsl(7, 99%, 70%);
+    // }
 }

@@ -82,6 +82,25 @@ body {
 }
 .navbar__item {
   display: inline-block;
+  position: relative;
+  padding-bottom: 0.3rem;
+}
+.navbar__item::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 1.8px;
+  bottom: 0;
+  background-color: hsl(0, 0%, 100%);
+  transition: width 0.3s ease-in-out;
+}
+.navbar__item--btn::after {
+  content: none;
+}
+.navbar__item:hover::after {
+  width: 100%;
 }
 .navbar__link {
   text-decoration: none;
@@ -144,6 +163,14 @@ body {
   width: 100%;
 }
 
+.learn-div {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  z-index: 1000;
+}
+
 .stories {
   grid-column: full-start/full-end;
   display: grid;
@@ -203,6 +230,51 @@ body {
   font-size: 1.6rem;
   border: none;
   cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.btn:hover {
+  background-color: rgb(106, 204, 250);
+  color: white;
+}
+
+.learn-btn {
+  background-color: transparent;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  height: 2rem;
+  font-family: "Fraunces", sans-serif;
+  color: hsl(212, 27%, 19%);
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 900;
+  z-index: 1;
+  width: 14rem;
+  height: 2rem;
+}
+
+.learn-btn::after {
+  content: "";
+  width: 105%;
+  position: absolute;
+  bottom: 0px;
+  height: 8px;
+  left: -5.5%;
+  border-radius: 10px;
+  opacity: 0.3;
+  transition: all 0.4s ease-in-out;
+}
+
+.learn-btn--yellow::after {
+  background-color: hsl(51, 100%, 49%);
+}
+
+.learn-btn--pink::after {
+  background-color: hsl(7, 99%, 70%);
+}
+
+.learn-btn:hover::after {
+  opacity: 1;
 }
 
 .infos {
@@ -275,6 +347,11 @@ body {
 .footer__list__link {
   text-decoration: none;
   color: hsl(168, 34%, 41%);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.footer__list__link:hover {
+  color: hsl(0, 0%, 100%);
 }
 .footer__contact {
   display: grid;
@@ -282,6 +359,13 @@ body {
   grid-column-gap: 3rem;
   align-items: center;
   margin-top: 4rem;
+}
+.footer__app {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.footer__app:hover {
+  filter: brightness(5);
 }
 
 /*# sourceMappingURL=style.css.map */

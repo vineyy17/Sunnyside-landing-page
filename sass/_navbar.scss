@@ -12,7 +12,6 @@
     &__menu {
         grid-row: 1 / 2;
         grid-column: 1 / -1;
-
         justify-self: end;
 
     }
@@ -20,7 +19,6 @@
     &__list {
         display: grid;
         grid-template-columns: repeat(4, min-content);
-
         grid-column-gap: 4rem;
         align-items: center;
         list-style: none;
@@ -29,6 +27,28 @@
 
     &__item {
         display: inline-block;
+        position: relative;
+        padding-bottom: .3rem;
+    }
+
+    &__item::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 1.8px;
+        bottom: 0;
+        background-color: $white;
+        transition: width .3s ease-in-out;
+    }
+
+    &__item--btn::after {
+        content: none;
+    }
+
+    &__item:hover::after {
+        width: 100%;
     }
 
     &__link {

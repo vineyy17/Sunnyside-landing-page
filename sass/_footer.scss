@@ -19,6 +19,12 @@
         &__link {
             text-decoration: none;
             color: $dark-moderate-cyan;
+            transition: .3s ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+                color: $white;
+            }
         }
     }
 
@@ -29,5 +35,13 @@
         align-items: center;
 
         margin-top: 4rem;
+    }
+
+    &__app {
+        cursor: pointer;
+        transition: .3s ease-in-out;
+        &:hover {
+            filter: brightness(5);
+        } 
     }
 }
