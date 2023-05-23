@@ -22,7 +22,7 @@ body {
 .container {
   padding: 0;
   display: grid;
-  grid-template-rows: 100vh repeat(5, min-content);
+  grid-template-rows: 100vh repeat(6, min-content);
   grid-template-columns: [full-start] repeat(2, [col-start] minmax(min-content, 1fr) [col-end]) [full-start];
 }
 
@@ -198,6 +198,7 @@ body {
   color: hsl(212, 27%, 19%);
   font-family: "Fraunces", sans-serif;
   font-weight: 700;
+  font-size: 1.6rem;
   border: none;
   cursor: pointer;
 }
@@ -240,6 +241,17 @@ body {
 }
 .info__text--blue {
   color: hsl(198, 62%, 26%);
+}
+
+.gallery {
+  grid-column: full-start/full-end;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.gallery__img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
