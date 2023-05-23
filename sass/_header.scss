@@ -6,15 +6,16 @@
     position: relative;
     background-position: top;
 
-    padding: 4vh 4vh;
+    padding: 4vh 2vw;
     padding-bottom: 0;
 
     &__box {
         position: absolute;
-        top: 30%;
+        top: 35%;
         left: 50%;
         transform: translate(-50%, -50%);
         text-align: center;
+        width: 100%;
     }
 
     &__arrow-box {

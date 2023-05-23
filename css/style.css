@@ -16,7 +16,7 @@ body {
   color: #000;
   font-weight: 600;
   line-height: 1.6;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 }
 
 .container {
@@ -31,7 +31,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.7rem;
   font-weight: 900;
-  font-size: 4rem;
+  font-size: 5rem;
   color: hsl(0, 0%, 100%);
 }
 
@@ -78,6 +78,7 @@ body {
   grid-template-columns: repeat(4, min-content);
   grid-column-gap: 4rem;
   align-items: center;
+  list-style: none;
 }
 .navbar__item {
   display: inline-block;
@@ -93,15 +94,16 @@ body {
   background-size: cover;
   position: relative;
   background-position: top;
-  padding: 4vh 4vh;
+  padding: 4vh 2vw;
   padding-bottom: 0;
 }
 .header__box {
   position: absolute;
-  top: 30%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  width: 100%;
 }
 .header__arrow-box {
   position: absolute;
@@ -252,6 +254,34 @@ body {
   display: block;
   object-fit: cover;
   width: 100%;
+}
+
+.footer {
+  grid-column: full-start/full-end;
+  background-color: hsl(168, 46%, 68%);
+  padding: 9vh 0;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-row-gap: 4rem;
+}
+.footer__list {
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  grid-column-gap: 5rem;
+  align-items: center;
+  list-style: none;
+}
+.footer__list__link {
+  text-decoration: none;
+  color: hsl(168, 34%, 41%);
+}
+.footer__contact {
+  display: grid;
+  grid-template-columns: repeat(4, min-content);
+  grid-column-gap: 3rem;
+  align-items: center;
+  margin-top: 4rem;
 }
 
 /*# sourceMappingURL=style.css.map */
