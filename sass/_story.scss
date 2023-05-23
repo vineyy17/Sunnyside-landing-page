@@ -2,10 +2,11 @@
     grid-column: full-start / full-end;
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
 
-    padding: 15vh 7.2vw;
-    grid-row-gap: 8vh;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+
+    padding: 18vh 7.2vw;
+    padding-top: 10vh;
     grid-column-gap: 2vw;
 
     justify-items: center;
@@ -15,7 +16,9 @@
 }
 
 .story-heading {
-    grid-column: 1 / -1;
+    padding-top: 18vh;
+    text-align: center;
+    grid-column: full-start / full-end;
     letter-spacing: 1.2rem;
     color: $grayish-blue;
 }
@@ -23,6 +26,8 @@
 .story {
     display: grid;
     justify-items: center;
+
+    grid-row-gap: 5vh;
 
     &__img {
         width: 5rem;
@@ -49,7 +54,4 @@
         color: $grayish-blue;
     }
 
-    &__details {
-        margin-top: 5vh;
-    }
 }
