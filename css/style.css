@@ -197,6 +197,8 @@ body {
 @media only screen and (max-width: 37.5em) {
   .feature {
     justify-items: center;
+    text-align: center;
+    padding: 8vh 5vw;
   }
 }
 
@@ -262,6 +264,12 @@ body {
     padding-top: 5vh;
   }
 }
+@media only screen and (max-width: 37.5em) {
+  .stories {
+    padding: 4.5vh 5vw;
+    padding-top: 2.5vh;
+  }
+}
 
 .story-heading {
   padding-top: 18vh;
@@ -275,16 +283,33 @@ body {
     padding-top: 9vh;
   }
 }
+@media only screen and (max-width: 37.5em) {
+  .story-heading {
+    font-size: 1.5rem;
+    letter-spacing: 1rem;
+    padding-bottom: 2rem;
+  }
+}
 
 .story {
   display: grid;
   justify-items: center;
   grid-row-gap: 5vh;
 }
+@media only screen and (max-width: 37.5em) {
+  .story {
+    padding-top: 2rem;
+  }
+}
 .story__img {
   width: 5rem;
   border-radius: 50%;
   display: block;
+}
+@media only screen and (max-width: 37.5em) {
+  .story__img {
+    width: 7rem;
+  }
 }
 .story__text {
   text-align: center;
@@ -411,7 +436,7 @@ body {
 @media only screen and (max-width: 37.5em) {
   .info__overlay {
     width: 100%;
-    padding: 0 7.2vw;
+    padding: 0 5vw;
     top: 80%;
   }
 }
@@ -469,6 +494,11 @@ body {
   grid-column-gap: 5rem;
   align-items: center;
   list-style: none;
+}
+@media only screen and (max-width: 37.5em) {
+  .footer__list {
+    grid-column-gap: 8rem;
+  }
 }
 .footer__list__link {
   text-decoration: none;

@@ -16,6 +16,10 @@
         align-items: center;
         list-style: none;
 
+        @media only screen and (max-width: $bp-phone) {
+            grid-column-gap: 8rem;
+        }
+
         &__link {
             text-decoration: none;
             color: $dark-moderate-cyan;
