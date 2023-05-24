@@ -18,6 +18,12 @@ $white: hsl(0, 0%, 100%);
 $font-primary: 'Barlow', sans-serif;
 $font-secondary: 'Fraunces', sans-serif;
 
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 53em; // 850px
+
+
 
 *,
 *::before,
@@ -30,6 +36,14 @@ $font-secondary: 'Fraunces', sans-serif;
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 43.75%;
+    }
 }
 
 body {

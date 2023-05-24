@@ -10,6 +10,16 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 62.5em) {
+  html {
+    font-size: 43.75%;
+  }
+}
 
 body {
   font-family: "Barlow", sans-serif;
@@ -161,6 +171,12 @@ body {
   display: block;
   object-fit: cover;
   width: 100%;
+  min-height: 50rem;
+}
+@media only screen and (max-width: 53em) {
+  .photo__img {
+    min-height: 60rem;
+  }
 }
 
 .learn-div {
@@ -180,6 +196,14 @@ body {
   grid-column-gap: 2vw;
   justify-items: center;
 }
+@media only screen and (max-width: 53em) {
+  .stories {
+    grid-template-columns: 1fr;
+    grid-row-gap: 5rem;
+    padding: 9vh 7.2vw;
+    padding-top: 5vh;
+  }
+}
 
 .story-heading {
   padding-top: 18vh;
@@ -187,6 +211,11 @@ body {
   grid-column: full-start/full-end;
   letter-spacing: 1.2rem;
   color: hsl(210, 4%, 67%);
+}
+@media only screen and (max-width: 53em) {
+  .story-heading {
+    padding-top: 9vh;
+  }
 }
 
 .story {
@@ -309,6 +338,12 @@ body {
   display: block;
   object-fit: cover;
   width: 100%;
+  min-height: 50rem;
+}
+@media only screen and (max-width: 53em) {
+  .info__img {
+    min-height: 60rem;
+  }
 }
 .info__text--cyan {
   color: hsl(167, 40%, 24%);
