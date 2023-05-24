@@ -83,6 +83,11 @@ body {
   grid-column: 1/-1;
   justify-self: end;
 }
+@media only screen and (max-width: 53em) {
+  .navbar__menu {
+    display: none;
+  }
+}
 .navbar__list {
   display: grid;
   grid-template-columns: repeat(4, min-content);
@@ -125,6 +130,11 @@ body {
   background-position: top;
   padding: 4vh 2vw;
   padding-bottom: 0;
+}
+@media only screen and (max-width: 53em) {
+  .header {
+    padding: 4vh 4vw;
+  }
 }
 .header__box {
   position: absolute;
@@ -199,7 +209,7 @@ body {
 @media only screen and (max-width: 53em) {
   .stories {
     grid-template-columns: 1fr;
-    grid-row-gap: 5rem;
+    grid-row-gap: 4rem;
     padding: 9vh 7.2vw;
     padding-top: 5vh;
   }
