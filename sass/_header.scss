@@ -13,6 +13,10 @@
         padding: 4vh 4vw;
     }
 
+    @media only screen and (max-width: $bp-phone) {
+        background-image: url(/images/mobile/image-header.jpg);
+    }
+
     &__box {
         position: absolute;
         top: 35%;
@@ -20,6 +24,10 @@
         transform: translate(-50%, -50%);
         text-align: center;
         width: 100%;
+
+        @media only screen and (max-width: $bp-phone) {
+            width: 100%;
+        }
     }
 
     &__arrow-box {
