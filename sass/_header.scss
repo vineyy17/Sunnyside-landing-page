@@ -13,6 +13,10 @@
         padding: 4vh 4vw;
     }
 
+    @media only screen and (max-width: $bp-medium) {
+        padding: 5vh 5vw;
+    }
+
     @media only screen and (max-width: $bp-phone) {
         background-image: url(/images/mobile/image-header.jpg);
     }
@@ -35,6 +39,10 @@
         top: 60%;
         left: 50%;
         transform: translate(-50%, -50%);
+
+        @media only screen and (max-width: $bp-phone) {
+            top: 66%;
+        }
     }
 
 }
