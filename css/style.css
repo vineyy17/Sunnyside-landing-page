@@ -35,7 +35,7 @@ body {
 }
 @media only screen and (max-width: 37.5em) {
   body {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -388,11 +388,11 @@ body {
 
 .learn-btn::after {
   content: "";
-  width: 105%;
+  width: 100%;
   position: absolute;
   bottom: 0px;
   height: 8px;
-  left: -5.5%;
+  left: -4%;
   border-radius: 10px;
   opacity: 0.3;
   transition: all 0.4s ease-in-out;
