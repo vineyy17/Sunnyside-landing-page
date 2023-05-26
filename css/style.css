@@ -178,16 +178,18 @@ body {
     width: 100%;
   }
 }
+.header__arrow {
+  animation: jump-down 3s ease infinite;
+}
 .header__arrow-box {
   position: absolute;
-  top: 56%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
-  animation: jump-down 2s ease infinite;
 }
 @media only screen and (max-width: 37.5em) {
   .header__arrow-box {
-    top: 60%;
+    top: 64%;
   }
 }
 
