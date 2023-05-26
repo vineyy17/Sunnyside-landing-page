@@ -36,13 +36,29 @@
 
     &__arrow-box {
         position: absolute;
-        top: 60%;
+        top: 56%;
         left: 50%;
         transform: translate(-50%, -50%);
+        animation: jump-down 2s ease infinite;
 
         @media only screen and (max-width: $bp-phone) {
-            top: 66%;
+            top: 60%;
         }
     }
 
 }
+
+@keyframes jump-down {
+    0%,
+    50%,
+    100% {
+      transform: translateY(0);
+    }
+    12.5%,
+    37.5% {
+      transform: translateY(20px);
+    }
+    25% {
+      transform: translateY(10px);
+    }
+  }
