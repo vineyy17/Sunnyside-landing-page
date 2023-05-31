@@ -52,7 +52,7 @@
         &::after {
             content: "";
             position: absolute;
-            top: 90%;
+            top: 100%;
             left: 50%;
             transform: translate(-50%, -.8rem);
             width: calc(100% + 1.5rem);

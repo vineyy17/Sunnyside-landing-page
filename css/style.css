@@ -101,6 +101,7 @@ body {
 }
 .navbar__list {
   display: flex;
+  align-items: center;
   gap: 4rem;
   list-style: none;
   padding: 0;
@@ -310,7 +311,7 @@ body {
 .feature__link::after {
   content: "";
   position: absolute;
-  top: 90%;
+  top: 100%;
   left: 50%;
   transform: translate(-50%, -0.8rem);
   width: calc(100% + 1.5rem);
