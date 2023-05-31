@@ -108,7 +108,7 @@ body {
 }
 @media only screen and (max-width: 53em) {
   .navbar__list {
-    position: fixed;
+    position: absolute;
     top: 15rem;
     left: 5vw;
     right: 5vw;
@@ -127,7 +127,7 @@ body {
 }
 .navbar__list::before {
   content: "";
-  position: fixed;
+  position: absolute;
   border: 2.4rem solid transparent;
   border-right-color: hsl(0, 0%, 100%);
   top: -2.4rem;
