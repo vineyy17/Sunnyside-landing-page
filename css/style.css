@@ -109,7 +109,7 @@ body {
 @media only screen and (max-width: 53em) {
   .navbar__list {
     position: fixed;
-    inset: 20vh 5vw 20vh 5vw;
+    inset: 15rem 5vw 25rem 5vw;
     flex-direction: column;
     align-items: center;
     padding: 4rem;
