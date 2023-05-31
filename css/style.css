@@ -109,7 +109,7 @@ body {
 @media only screen and (max-width: 53em) {
   .navbar__list {
     position: fixed;
-    inset: 20vh 5vw 35vh 5vw;
+    inset: 20vh 5vw 20vh 5vw;
     flex-direction: column;
     align-items: center;
     padding: 4rem;
@@ -544,7 +544,6 @@ body {
   .info__overlay {
     width: 100%;
     padding: 0 5vw;
-    top: 80%;
   }
 }
 .info__img {
