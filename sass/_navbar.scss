@@ -14,7 +14,10 @@
 
         @media only screen and (max-width: $bp-medium) {
             position: fixed;
-            inset:  15rem 5vw 25rem 5vw;
+            top: 15rem;
+            left: 5vw;
+            right: 5vw;
+
             flex-direction: column;
             align-items: center;
             padding: 4rem;
