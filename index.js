@@ -1,8 +1,8 @@
 const primaryNav = document.querySelector('.navbar__list');
 const navToggle = document.querySelector('.navbar__toggle');
+const navLinks = document.querySelectorAll('.navbar__link');
 
-
-navToggle.addEventListener('click', () => {
+const toggleNav = function () {
     const visibility = primaryNav.getAttribute("data-visible");
 
     if (visibility === "false") {
@@ -10,7 +10,14 @@ navToggle.addEventListener('click', () => {
     } else if (visibility === "true") {
         primaryNav.setAttribute('data-visible', false);
     }
-});
+  };
+
+navToggle.addEventListener('click', toggleNav);
+
+
+for (let i = 0; i < navLinks.length; i++) {
+    navLinks[i].addEventListener("click", toggleNav);
+}
 
 let resizeTimer;
 window.addEventListener("resize", () => {
