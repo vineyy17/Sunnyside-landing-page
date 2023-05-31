@@ -17,6 +17,10 @@
         border: none;
         cursor: pointer;
         transition: .3s ease-in-out;
+
+        @media only screen and (max-width: $bp-medium) {
+            background-color: $yellow;
+        }
     }
 
     &:hover {

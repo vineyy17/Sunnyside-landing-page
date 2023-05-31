@@ -57,6 +57,7 @@ body {
     font-weight: 600;
     line-height: 1.6;
     font-size: 1.7rem;
+    overflow-x: hidden;
 
     @media only screen and (max-width: $bp-phone) {
         font-size: 2rem;
@@ -68,4 +69,9 @@ body {
     display: grid;
     grid-template-rows: 100vh repeat(6, min-content);
     grid-template-columns: [full-start] repeat(2, [col-start] minmax(min-content, 1fr) [col-end]) [full-start];
+}
+
+.resize-animation-stopper * {
+    animation: none !important;
+    transition: none !important;
 }
